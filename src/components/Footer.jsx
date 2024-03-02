@@ -15,7 +15,7 @@ export const Footer = () => {
           <span className="text-sm text-white sm:text-center dark:text-gray-400">
             © 2023{" "}
             <a href="#" className="hover:underline">
-              WE!™
+              ZARDigital™
             </a>
             . All Rights Reserved.
           </span>
