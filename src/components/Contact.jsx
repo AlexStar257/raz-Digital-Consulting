@@ -26,8 +26,8 @@ export const Contact = () => {
       <div className="max-w-4xl mx-auto p-6 md:p-12 bg-gray-200" id="contact">
         <h2 className="text-4xl font-bold mb-4 text-center">Contáctanos</h2>
         <p className="text-lg mb-6 text-center">
-          Haznos llegar todas tus dudas, hasta las existenciales, nosotros te
-          ayudamos ;)
+          Haznos llegar tus dudas o comentarios y nos pondremos en contacto a la
+          brevedad.
         </p>
 
         <form
@@ -95,9 +95,9 @@ export const Contact = () => {
 
           <button
             type="submit"
-            className="col-span-2 md:col-span-2 md:w-6/12 mx-auto px-8 py-3 rounded-full bg-cyan-500 text-white text-xl hover:bg-cyan-400 transition-colors shadow-lg"
+            className="col-span-2 md:col-span-2 md:w-4/12 mx-auto px-8 py-3 rounded-full bg-cyan-500 text-white text-xl hover:bg-cyan-400 transition-colors shadow-lg"
           >
-            ¡Contáctenme!
+            Contactar
           </button>
         </form>
       </div>

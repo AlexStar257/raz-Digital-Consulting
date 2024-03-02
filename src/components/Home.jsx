@@ -24,8 +24,7 @@ export const Home = () => {
           />
 
           <h2 className=" text-4xl mt-6 mb-4 font-semibold leading-tight">
-            Llevamos <b className="font-bold">tu marca</b> tan lejos como tú
-            quieras
+            <b className="font-bold">RAZ</b> Digital Consulting
           </h2>
 
           <button
