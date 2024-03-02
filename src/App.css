@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .gradient-bg {
-    background: linear-gradient(to right, #FF138D, #FF3F05);
+    background: linear-gradient(to right, #192a40, #27433a);
 }
 

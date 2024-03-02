@@ -10,18 +10,20 @@ export const Home = () => {
 
   return (
     <section
-      className="flex flex-col md: min-h-screen text-white bg-cover"
-      style={{ backgroundImage: `url(${background})` }}
+      className="flex flex-col md: min-h-screen text-white bg-cover bg-center bg-no-repeat bg-fixed relative z-10"
+      style={{
+        backgroundImage: `url(${background})`,
+      }}
     >
-      <div className="flex-1 flex items-center md:flex-row md:justify-end mb-8 px-8">
-        <div className="text-center md:text-left md:w-1/2 md:self-center">
+      <div className="flex-1 flex items-center md:flex-auto md:justify-center mb-8 px-8">
+        <div className="text-center md:w-1/2 md:self-center">
           <img
             src={logo}
             alt="Logo"
             className="w-56 h-auto inline-block mb-4 md:mb-0 md:mr-4"
           />
 
-          <h2 className="font-light text-4xl mt-5 md:max-w-md lg:max-w-lg xl:max-w-xl">
+          <h2 className=" text-4xl mt-6 mb-4 font-semibold leading-tight">
             Llevamos <b className="font-bold">tu marca</b> tan lejos como tú
             quieras
           </h2>

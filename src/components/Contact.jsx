@@ -44,7 +44,7 @@ export const Contact = () => {
               name="nombre"
               value={formData.nombre}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border rounded-md shadow-lg"
               required
             />
           </div>
@@ -59,7 +59,7 @@ export const Contact = () => {
               name="correo"
               value={formData.correo}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border rounded-md shadow-lg"
               required
             />
           </div>
@@ -74,7 +74,7 @@ export const Contact = () => {
               name="telefono"
               value={formData.telefono}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border rounded-md shadow-lg"
             />
           </div>
 
@@ -87,7 +87,7 @@ export const Contact = () => {
               name="mensaje"
               value={formData.mensaje}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border rounded-md shadow-lg"
               rows="4"
               required
             />
@@ -95,7 +95,7 @@ export const Contact = () => {
 
           <button
             type="submit"
-            className="col-span-2 md:col-span-2 md:w-6/12 mx-auto px-8 py-3 rounded-full bg-cyan-500 text-white text-xl hover:bg-cyan-400 transition-colors"
+            className="col-span-2 md:col-span-2 md:w-6/12 mx-auto px-8 py-3 rounded-full bg-cyan-500 text-white text-xl hover:bg-cyan-400 transition-colors shadow-lg"
           >
             ¡Contáctenme!
           </button>
