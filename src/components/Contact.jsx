@@ -29,13 +29,16 @@ export const Contact = () => {
         backgroundImage: `url(${bgContact})`,
       }} */
     >
-      <div className="max-w-4xl mx-auto p-6 md:p-12 text-white " id="contact">
+      <div className="max-w-4xl mx-auto p-6 md:p-12  text-white " id="contact">
         <h2 className="text-4xl font-bold mb-4 text-center">Contáctanos</h2>
         <p className="text-lg mb-6 text-center">
           Haznos llegar tus dudas o comentarios y nos pondremos en contacto a la
           brevedad.
         </p>
-        <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6 ">
+        <form
+          onSubmit={handleSubmit}
+          className=" md: grid md:grid-cols-2 gap-6"
+        >
           <div className="mb-4 ">
             <label htmlFor="nombre" className="text-xl font-bold mb-2">
               Nombre
@@ -46,7 +49,7 @@ export const Contact = () => {
               name="nombre"
               value={formData.nombre}
               onChange={handleChange}
-              className="w-full h-12 px-4 py-2 font-bold"
+              className="w-10/12 h-12 px-4 py-2 font-bold"
               required
             />
           </div>
@@ -80,16 +83,16 @@ export const Contact = () => {
             />
           </div>
 
-          <div className="mb-4 col-span-2">
-            <label htmlFor="mensaje" className="block text-xl font-bold mb-2">
+          <div className="mb-4">
+            <label htmlFor="mensaje" className="text-xl font-bold mb-2">
               ¿En qué podemos ayudar?
             </label>
-            <textarea
+            <input
               id="mensaje"
               name="mensaje"
               value={formData.mensaje}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md shadow-lg"
+              className="w-full h-12 px-4 py-2 font-bold"
               rows="4"
               required
             />
