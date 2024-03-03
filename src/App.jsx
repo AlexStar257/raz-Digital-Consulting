@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 import { Contact, Footer, Home } from "./components";
 
 function App() {

@@ -1,4 +1,3 @@
-import React from "react";
 import miniLogo from "../assets/logo-zar-digital-raz-04.svg";
 
 export const Footer = () => {
@@ -12,7 +11,7 @@ export const Footer = () => {
         </div>
         <hr className="my-6 border-current linea" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-black sm:text-center dark:text-gray-400">
+          <span className="text-sm text-black sm:text-center">
             © 2024{" "}
             <a href="#" className="hover:underline">
               RAZ Digital Consulting™

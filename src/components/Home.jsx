@@ -1,4 +1,3 @@
-import React from "react";
 import background from "../assets/background.jpg";
 import logo from "../assets/logo-zar-digital-raz-04.svg";
 //import "animate.css";

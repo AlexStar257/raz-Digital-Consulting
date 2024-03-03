@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 .gradient-bg {
-    background: linear-gradient(to right, #FF138D, #FF3F05);
+   background-color: #f0f0f0;
 }
 
 .bgColorF {
