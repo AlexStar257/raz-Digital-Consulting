@@ -1,4 +1,5 @@
 import { useState } from "react";
+import bgContact from "../assets/bg-contact.jpg";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,20 +23,21 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-200">
-      <div className="max-w-4xl mx-auto p-6 md:p-12 bg-gray-200" id="contact">
+    <div
+      className="flex flex-col min-h-screen bg-cover bg-center bg-no-repeat bg-fixed relative z-10 gradient-bg"
+      /*       style={{
+        backgroundImage: `url(${bgContact})`,
+      }} */
+    >
+      <div className="max-w-4xl mx-auto p-6 md:p-12 text-white " id="contact">
         <h2 className="text-4xl font-bold mb-4 text-center">Contáctanos</h2>
         <p className="text-lg mb-6 text-center">
           Haznos llegar tus dudas o comentarios y nos pondremos en contacto a la
           brevedad.
         </p>
-
-        <form
-          onSubmit={handleSubmit}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-        >
-          <div className="mb-4">
-            <label htmlFor="nombre" className="block text-xl font-bold mb-2">
+        <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6 ">
+          <div className="mb-4 ">
+            <label htmlFor="nombre" className="text-xl font-bold mb-2">
               Nombre
             </label>
             <input
@@ -44,13 +46,13 @@ export const Contact = () => {
               name="nombre"
               value={formData.nombre}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md shadow-lg"
+              className="w-full h-12 px-4 py-2 font-bold"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="correo" className="block text-xl font-bold mb-2">
+            <label htmlFor="correo" className="text-xl font-bold mb-2">
               Correo
             </label>
             <input
@@ -59,13 +61,13 @@ export const Contact = () => {
               name="correo"
               value={formData.correo}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md shadow-lg"
+              className="w-full h-12 px-4 py-2 font-bold"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="telefono" className="block text-xl font-bold mb-2">
+            <label htmlFor="telefono" className="text-xl font-bold mb-2">
               Teléfono
             </label>
             <input
@@ -74,7 +76,7 @@ export const Contact = () => {
               name="telefono"
               value={formData.telefono}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md shadow-lg"
+              className="w-full h-12 px-4 py-2 font-bold"
             />
           </div>
 

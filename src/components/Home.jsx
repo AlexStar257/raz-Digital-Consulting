@@ -1,6 +1,7 @@
 import React from "react";
 import background from "../assets/background.jpg";
 import logo from "../assets/logo-zar-digital-raz-04.svg";
+//import "animate.css";
 
 export const Home = () => {
   const scrollToContact = () => {
@@ -10,7 +11,7 @@ export const Home = () => {
 
   return (
     <section
-      className="flex flex-col md: min-h-screen text-white bg-cover bg-center bg-no-repeat bg-fixed relative z-10"
+      className="flex flex-col md: min-h-screen text-black bg-cover bg-center bg-no-repeat bg-fixed relative z-10"
       style={{
         backgroundImage: `url(${background})`,
       }}

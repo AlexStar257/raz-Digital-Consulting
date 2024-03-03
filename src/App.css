@@ -1,8 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 .gradient-bg {
-    background: linear-gradient(to right, #a3a5a7, #27433a);
+    background: linear-gradient(to right, #FF138D, #FF3F05);
 }
 
+.bgColorF {
+    background-color: #e8e8e8;
+}
+
+.linea{
+    color:#d5d5d5;
+}
+
+input{
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid #5b5b5b;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+    width: auto;
+    display: inline-block;
+}
+
+input:focus {
+    outline: none;
+    border-color: ;
+    
+}
