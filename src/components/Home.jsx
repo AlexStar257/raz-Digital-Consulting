@@ -10,7 +10,7 @@ export const Home = () => {
 
   return (
     <section
-      className="flex flex-col md: min-h-screen text-black bg-cover bg-center bg-no-repeat bg-fixed relative z-10"
+      className="flex flex-col md: min-h-screen text-black bg-cover bg-center bg-no-repeat relative z-10"
       style={{
         backgroundImage: `url(${background})`,
       }}
