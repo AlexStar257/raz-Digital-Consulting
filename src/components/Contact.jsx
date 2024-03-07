@@ -37,8 +37,8 @@ export const Contact = () => {
             Contáctanos
           </h2>
           <p className="text-lg mb-6 max-w-xl mx-auto colorText">
-            Haznos llegar todas tus dudas, hasta las existenciales, nosotros te
-            ayudamos ;)
+            Haznos llegar tus dudas o comentarios y nos pondremos en contacto a
+            la brevedad.
           </p>
         </div>
         <form onSubmit={handleSubmit} className="max-w-4xl mx-auto">
@@ -53,7 +53,7 @@ export const Contact = () => {
                 name="nombre"
                 value={formData.nombre}
                 onChange={handleChange}
-                className="form-input mt-1 block w-full border-gray-300"
+                className="mt-1 block w-full border-gray-300"
                 required
               />
             </div>
@@ -68,7 +68,7 @@ export const Contact = () => {
                 name="correo"
                 value={formData.correo}
                 onChange={handleChange}
-                className="form-input mt-1 block w-full border-gray-300"
+                className="mt-1 block w-full border-gray-300"
                 required
               />
             </div>
@@ -86,7 +86,7 @@ export const Contact = () => {
                 name="telefono"
                 value={formData.telefono}
                 onChange={handleChange}
-                className="form-input mt-1 block w-full border-gray-300"
+                className="mt-1 block w-full border-gray-300"
               />
             </div>
 
@@ -99,7 +99,7 @@ export const Contact = () => {
                 name="mensaje"
                 value={formData.mensaje}
                 onChange={handleChange}
-                className="form-input mt-1 block w-full border-gray-300"
+                className="mt-1 block w-full border-gray-300"
                 rows="4"
                 required
               />
@@ -108,7 +108,7 @@ export const Contact = () => {
           <div className="flex justify-center mt-12">
             <button
               type="submit"
-              className="px-12 py-3 rounded-lg bg-cyan-500 text-white font-bold hover:bg-cyan-400 transition-colors shadow-lg"
+              className="px-12 py-3 rounded-lg bg-cyan-500 text-white font-bold hover:bg-cyan-400 transition-colors"
             >
               ¡Contáctenme!
             </button>
