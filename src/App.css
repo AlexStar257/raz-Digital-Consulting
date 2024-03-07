@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 .gradient-bg {
    background-color: #f0f0f0;
@@ -9,6 +10,10 @@
 
 .bgColorF {
     background-color: #e8e8e8;
+}
+
+.colorText{
+    color: #989898;
 }
 
 .linea{
@@ -21,8 +26,6 @@ input{
     border-bottom: 1.5px solid #5b5b5b;
     padding: 5px;
     margin: 5px;
-    outline: none;
-    width: auto;
     display: inline-block;
 }
 

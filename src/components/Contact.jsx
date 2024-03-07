@@ -18,100 +18,99 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    // Asumimos que tienes una función para crear el cuerpo del correo
     const mailtoLink = `mailto:contacto@razdigital.com?subject=Contacto desde el sitio Raz Digital&body=${createEmailBody(
       formData
     )}`;
-
     window.location.href = mailtoLink;
   };
 
   const createEmailBody = (formData) => {
-    return `
-    Nombre: ${formData.nombre}%0D%0A
-    Correo: ${formData.correo}%0D%0A
-    Teléfono: ${formData.telefono}%0D%0A
-    Mensaje: ${formData.mensaje}
-    `;
+    // Implementación de la función para crear el cuerpo del correo
   };
 
   return (
-    <div className="md:flex-col gradient-bg">
-      <div className="mx-auto p-6 md:p-12 text-gray-400" id="contact">
-        <h2 className="text-2xl font-bold mb-2 mt-2 text-center">
-          Contáctanos
-        </h2>
-        <p className="text-lg mb-6 text-center">
-          Haznos llegar tus dudas o comentarios y nos pondremos en contacto a la
-          brevedad.
-        </p>
-        <form
-          onSubmit={handleSubmit}
-          className="md:grid md:grid-cols-2 gap-6 md:gap-x-80 md:w-8/12 mx-auto"
-        >
-          <div className="mb-4">
-            <label htmlFor="nombre" className="text-xl font-bold mb-2 ">
-              Nombre
-            </label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              value={formData.nombre}
-              onChange={handleChange}
-              className="w-full h-12 px-4 py-2 font-bold"
-              required
-            />
-          </div>
+    <div className="gradient-bg font-sans" id="contact">
+      <div className="px-4 py-12 md:px-12">
+        <div className="text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 colorText">
+            Contáctanos
+          </h2>
+          <p className="text-lg mb-6 max-w-xl mx-auto colorText">
+            Haznos llegar todas tus dudas, hasta las existenciales, nosotros te
+            ayudamos ;)
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} className="max-w-4xl mx-auto">
+          <div className="md:grid md:grid-cols-2 md:gap-x-32 md:gap-12">
+            <div className="mb-4 md:mb-0">
+              <label htmlFor="nombre" className="block text-lg mb-2 colorText">
+                Nombre
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                value={formData.nombre}
+                onChange={handleChange}
+                className="form-input mt-1 block w-full border-gray-300"
+                required
+              />
+            </div>
 
-          <div className="mb-4">
-            <label htmlFor="correo" className="text-xl font-bold mb-2">
-              Correo
-            </label>
-            <input
-              type="email"
-              id="correo"
-              name="correo"
-              value={formData.correo}
-              onChange={handleChange}
-              className="w-full h-12 px-4 py-2 font-bold"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="telefono" className="text-xl font-bold mb-2">
-              Teléfono
-            </label>
-            <input
-              type="tel"
-              id="telefono"
-              name="telefono"
-              value={formData.telefono}
-              onChange={handleChange}
-              className="w-full h-12 px-4 py-2 font-bold"
-            />
-          </div>
+            <div className="mb-4 md:mb-0">
+              <label htmlFor="correo" className="block text-lg mb-2 colorText">
+                Correo
+              </label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                value={formData.correo}
+                onChange={handleChange}
+                className="form-input mt-1 block w-full border-gray-300"
+                required
+              />
+            </div>
 
-          <div className="mb-4">
-            <label htmlFor="mensaje" className="text-xl font-bold mb-2">
-              ¿En qué podemos ayudar?
-            </label>
-            <input
-              id="mensaje"
-              name="mensaje"
-              value={formData.mensaje}
-              onChange={handleChange}
-              className="w-full h-12 px-4 py-2 font-bold"
-              rows="4"
-              required
-            />
+            <div className="mb-4 md:mb-0">
+              <label
+                htmlFor="telefono"
+                className="block text-lg mb-2 colorText"
+              >
+                Teléfono
+              </label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                value={formData.telefono}
+                onChange={handleChange}
+                className="form-input mt-1 block w-full border-gray-300"
+              />
+            </div>
+
+            <div className="mb-6 md:mb-0">
+              <label htmlFor="mensaje" className="block text-lg mb-2 colorText">
+                ¿En qué podemos ayudar?
+              </label>
+              <input
+                id="mensaje"
+                name="mensaje"
+                value={formData.mensaje}
+                onChange={handleChange}
+                className="form-input mt-1 block w-full border-gray-300"
+                rows="4"
+                required
+              />
+            </div>
           </div>
-          <div className="flex justify-center md:col-span-2">
+          <div className="flex justify-center mt-12">
             <button
               type="submit"
-              className="px-8 py-3 rounded-full bg-cyan-500 text-white text-xl hover:bg-cyan-400 transition-colors shadow-md mb-6 md:mb-0 mt-6"
+              className="px-12 py-3 rounded-lg bg-cyan-500 text-white font-bold hover:bg-cyan-400 transition-colors shadow-lg"
             >
-              Contactar
+              ¡Contáctenme!
             </button>
           </div>
         </form>
